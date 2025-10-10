@@ -51,12 +51,12 @@ public class calculadoraController {
     	 por uma informação vazia atravez do replaceAll*/
     	txtNumero1.textProperty().addListener(
     	(observable, oldValue, newValue)->{
-    	txtNumero1.setText(newValue.replaceAll("[^\\d]",""));	
+    	txtNumero1.setText(newValue.replaceAll("[^\\d.]",""));	
     	});
     	
     	txtNumero2.textProperty().addListener(
     	(observable, oldValue, newValue)->{
-    	 txtNumero2.setText(newValue.replaceAll("[^\\d]",""));	
+    	 txtNumero2.setText(newValue.replaceAll("[^\\d.]",""));	
     	 });
     
     	
