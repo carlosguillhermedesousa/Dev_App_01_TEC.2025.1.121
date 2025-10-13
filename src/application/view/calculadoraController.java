@@ -82,10 +82,17 @@ public class calculadoraController {
        	}
     	
     	double resultado=numero1+numero2;
+    	    	
+    	String parOuImpar;
+    	if (resultado % 2 == 0) {
+    		parOuImpar=" é Par.";
+    	} else {
+    		parOuImpar=" é Impar.";
+    	}
     	
     	// retorna o valor de double para string
     	//informa o resultado na label com o setText
-    	lblResultado.setText("Resultado: "+String.valueOf(resultado));
+    	lblResultado.setText("Resultado: "+String.valueOf(resultado)+parOuImpar);
     }
     
     public void Subtrair() {
@@ -121,7 +128,7 @@ public class calculadoraController {
     	lblResultado.setText("Resultado: "+String.valueOf(resultado));
     }
 //metodo de converter string para double
-    private static double StrToDbl(String numero) {
+    public static double StrToDbl(String numero) {
 	try {
 		return Double.valueOf(numero);
 	} catch(Exception e) {
