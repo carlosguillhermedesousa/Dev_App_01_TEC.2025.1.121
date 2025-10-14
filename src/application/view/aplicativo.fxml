@@ -21,5 +21,10 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Button>
+      <Button fx:id="btnIMC11" layoutX="39.0" layoutY="320.0" mnemonicParsing="false" onAction="#abrirGameCarro" prefHeight="46.0" prefWidth="282.0" text="TOP GEAR" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

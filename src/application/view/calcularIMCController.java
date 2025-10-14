@@ -19,7 +19,24 @@ public class calcularIMCController {
 		double peso=Double.valueOf(txtPeso.getText());
 		double altura=calculadoraController.StrToDbl(txtAltura.getText());
 		double imc=peso / (altura*altura);
-		lblResultado.setText(txtNome.getText()+", O seu IMC é "+String.valueOf(imc));
+		//lblResultado.setText(txtNome.getText()+", O seu IMC é "+String.valueOf(imc)+" "+classificarIMC(imc));
+		lblResultado.setText(
+		String.format(txtNome.getText()+" O seu IMC é  %.2f",imc)+" "+classificarIMC(imc)
+		);
+	}
+	
+	private String classificarIMC(double imc) {
+		if(imc < 18.5) {
+			return "Abaixo do Peso";
+		} else if (imc < 24.9) {
+			return "Peso Normal";			
+		} else if (imc < 34.9) {
+			return "Obsidade Grau I";
+		} else if (imc < 39.9) {
+			return "Obsidade Grau II";
+		} else {
+			return "Obsidade Grau III";
+		}
 	}
 
 }
