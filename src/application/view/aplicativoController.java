@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
@@ -59,11 +60,35 @@ public class aplicativoController {
     	carregarTela("jogoCarro.fxml");
     }
     
+    @FXML
+    private void abrirCalculadoraIdade() {
+    	carregarTela("idade.fxml");
+    }
+    
+    @FXML
+    private void abrirCalculadoraMedia() {
+    	carregarTela("mediaNota.fxml");
+    }
+    
+    
 	@FXML
 	private void initialize() {
 		//abrirPaginaInicial();
 	}
 	
+	
+    @FXML
+    public static void voltar(Button btnVoltar) {
+    	try {
+    		Stage stage = (Stage) btnVoltar.getScene().getWindow();
+    		AnchorPane conteudoPane = (AnchorPane) stage.getScene().lookup("#conteudoPane");
+    		Parent fxml = FXMLLoader.load(aplicativoController.class.getResource("aplicativo.fxml"));
+    		
+    		conteudoPane.getChildren().setAll(fxml); 
+    	} catch(Exception e) {
+    		e.printStackTrace();
+    	}
+    }
 	
 }
 

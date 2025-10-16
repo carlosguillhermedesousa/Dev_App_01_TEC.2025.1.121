@@ -16,12 +16,22 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Button>
-      <Button fx:id="btnIMC1" layoutX="39.0" layoutY="253.0" mnemonicParsing="false" onAction="#abrirGame" prefHeight="46.0" prefWidth="282.0" text="GAME" wrapText="true">
+      <Button fx:id="btnIMC1" layoutX="39.0" layoutY="463.0" mnemonicParsing="false" onAction="#abrirGame" prefHeight="46.0" prefWidth="282.0" text="GAME" wrapText="true">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Button>
-      <Button fx:id="btnIMC11" layoutX="39.0" layoutY="320.0" mnemonicParsing="false" onAction="#abrirGameCarro" prefHeight="46.0" prefWidth="282.0" text="TOP GEAR" wrapText="true">
+      <Button fx:id="btnIMC11" layoutX="39.0" layoutY="530.0" mnemonicParsing="false" onAction="#abrirGameCarro" prefHeight="46.0" prefWidth="282.0" text="TOP GEAR" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnIMC2" layoutX="39.0" layoutY="246.0" mnemonicParsing="false" onAction="#abrirCalculadoraMedia" prefHeight="46.0" prefWidth="282.0" text="CALCULADOR MÉDIA" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnIMC21" layoutX="39.0" layoutY="309.0" mnemonicParsing="false" onAction="#abrirCalculadoraIdade" prefHeight="46.0" prefWidth="282.0" text="CALCULADOR IDADE" wrapText="true">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>

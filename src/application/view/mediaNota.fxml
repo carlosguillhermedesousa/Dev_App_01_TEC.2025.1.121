@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.mediaNotaController">
+   <children>
+      <TextField fx:id="txtNota1" layoutX="52.0" layoutY="135.0" prefHeight="26.0" prefWidth="274.0" promptText="NOTA 1" AnchorPane.leftAnchor="52.0" AnchorPane.rightAnchor="48.799999999999955">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtNota2" layoutX="52.0" layoutY="212.0" prefHeight="26.0" prefWidth="274.0" promptText="NOTA 2" AnchorPane.leftAnchor="52.0" AnchorPane.rightAnchor="48.80000000000001">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtNota3" layoutX="52.0" layoutY="289.0" prefHeight="26.0" prefWidth="274.0" promptText="NOTA 3" AnchorPane.leftAnchor="52.0" AnchorPane.rightAnchor="48.80000000000001">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtNota4" layoutX="52.0" layoutY="357.0" prefHeight="26.0" prefWidth="274.0" promptText="NOTA 4" AnchorPane.leftAnchor="52.0" AnchorPane.rightAnchor="48.80000000000001">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label fx:id="lblResultado" layoutX="-3.2" layoutY="488.0" prefHeight="102.0" prefWidth="360.0" text="Resultado:" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCalcular" layoutX="48.0" layoutY="432.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="259.0" text="Calcular Média">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="102.0" layoutY="65.0" text="Média de 4 Notas">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="115.0" text="Nota 1">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="191.0" text="Nota 2">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="272.0" text="Nota 3">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="339.0" text="Nota 4">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

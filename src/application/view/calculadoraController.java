@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import application.view.aplicativoController;
 
 public class calculadoraController {
 
@@ -22,10 +23,12 @@ public class calculadoraController {
     @FXML private TextField txtNumero2;
     
     @FXML private Button btnReset;
+    
+    @FXML private Button btnSair;
 
     @FXML
     private void initialize() {
-    	
+    	btnSair.setOnAction(e->{aplicativoController.voltar(btnSair);});	
     	/*
     	iniciar programa com valores zerados */
     	txtNumero1.setText("0");

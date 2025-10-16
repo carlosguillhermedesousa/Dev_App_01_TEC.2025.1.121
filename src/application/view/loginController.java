@@ -24,7 +24,7 @@ public class loginController {
 		String usuario=txtUsuario.getText();
 		String senha=txtSenha.getText();
 		
-		if (usuario.equals("carlos")  && senha.equals("admin")) {
+		if (usuario.equals("")  && senha.equals("")) {
 			Alert aviso;
 			aviso=new Alert(Alert.AlertType.CONFIRMATION);
 			aviso.setTitle("Confirmação");
