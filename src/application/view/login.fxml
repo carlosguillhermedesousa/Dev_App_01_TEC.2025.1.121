@@ -16,8 +16,14 @@
             <Image url="@../../../../../Downloads/images.jpg" />
          </image>
       </ImageView>
-      <Button layoutX="107.0" layoutY="452.0" mnemonicParsing="false" onAction="#sair" prefHeight="26.0" prefWidth="48.0" text="Sair" visible="false" />
-      <Button layoutX="225.0" layoutY="452.0" mnemonicParsing="false" onAction="#entrar" text="Entrar" visible="false" />
+      <Button layoutX="62.0" layoutY="342.0" mnemonicParsing="false" onAction="#sair" prefHeight="26.0" prefWidth="120.0" text="Sair">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="204.0" layoutY="343.0" mnemonicParsing="false" onAction="#entrar" prefWidth="120.0" text="Entrar">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
       <TextField fx:id="txtUsuario" layoutX="62.0" layoutY="205.0" prefHeight="26.0" prefWidth="262.0" promptText="Informe seu usuário">
          <font>
             <Font size="18.0" />
@@ -34,6 +40,11 @@
       <Label layoutX="145.0" layoutY="115.0" text="SHOW" textFill="#dcef60">
          <font>
             <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblNovoUsuario" layoutX="135.0" layoutY="550.0" text="Novo Usuario" textFill="#068cdf">
+         <font>
+            <Font name="System Bold" size="14.0" />
          </font>
       </Label>
    </children>

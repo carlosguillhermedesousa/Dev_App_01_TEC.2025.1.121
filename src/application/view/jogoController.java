@@ -31,6 +31,8 @@ public class jogoController {
 	private Image imagemPlayer;
 	private Image imagemObstaculo;
 	
+	private boolean turbo = false;
+	private int nivel = 1;
 	
 	@FXML
 	public void initialize() {
@@ -61,12 +63,15 @@ public class jogoController {
 		AnimationTimer timer = new AnimationTimer() {
 			long ultimoSpaw=0;
 			long intervaloSpaw=1_000_000_000;
+			long lastSpawnNivel = 0;
 			
 			@Override
 			public void handle(long now) {
 				atualizar();
 				desenhar(gc);
-				long velocidade=1_000_000_000;
+				long velocidade=1_000_000_000/nivel;
+                long intervaloSpawn = turbo ? velocidade/2:velocidade;
+                
 				if (now - ultimoSpaw > intervaloSpaw) {					
 
 				obstaculos.add(new Obstaculo(random.nextInt((int) larguraTela - 40), -40));				
